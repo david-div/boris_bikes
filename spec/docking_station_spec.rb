@@ -39,6 +39,19 @@ describe DockingStation do
   20.times { subject.dock_bike(Bike.new) }
   end
 
+  it "Set capacity number of docking stations" do
+  station = DockingStation.new(10)
+  expect(station.capacity).to eq 10
+  end
+
+  it "Default capacity is set to 20" do
+  station = DockingStation.new
+  expect(station.capacity).to eq 20
+  end
+
+  it "Default capacity is set to 20" do
+  expect(subject.capacity).to eq 20
+  end
 
 end
 =begin
