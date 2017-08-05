@@ -1,6 +1,6 @@
 class Bike
   def working?
-    p "bike works"
+    true
   end
 
 end
